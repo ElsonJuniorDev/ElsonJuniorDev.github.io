@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis de cores*/
+:root {
+    --cinza:#848586;
+    --dackcinza:#323031;
+    --vermelho:#FF3C38;
+    --branco:#FEFCFD;
+    --preto:#090C02;
+
+}
+/*Cabecario*/
+
+.cabecario{
+    background-color: var(--cinza);
+    width: 100%;
+
+}
