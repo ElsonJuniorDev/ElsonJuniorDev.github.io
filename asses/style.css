@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700;800&family=Roboto:wght@100;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -13,18 +16,121 @@
     --preto:#090C02;
 
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /*Cabecario*/
 
 .cabecario{
-    background-color: var(--cinza);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dackcinza);
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    
+}
 
+.logo {
+    color: var(--branco);
+    font-weight: 100;
+    margin: 55px 0 55px 150px;
+    font-size: 3rem;
+    border-right: solid 2px ;
+    overflow: hidden;
+    white-space: nowrap; 
+    
+}
+
+/*animação da logo*/
+.type-animation{
+    animation: 
+        cursor 500ms steps(28) infinite normal,
+        type 4s steps(28) 1s normal both;
+}
+
+@keyframes  type {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5em;
+    }
+}
+
+@keyframes  cursor {
+    from {
+        border-right-color: var(--branco);
+
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.menu-container ul{
+    margin-right: 65px;
+    
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+   
+}
+
+.menu-container ul li {
+   
+    padding: 45px;
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+    transition: 2s;
+}
+
+.menu-container ul li a:hover {    
+    color: var(--vermelho);
+  
 }
 
 /*Contant*/
 
 .content{
+    margin: 155px;
     background-color: var(--branco);
+}
+
+.txt-container{
+   
+   
+}
+.txt-container > h1 {
+    font-size: 35px;
+    color: var(--vermelho);  
+  
+}
+
+.txt-container > p {
+    font-size: 55px;
+    font-weight: bold;
+ 
+}
+
+.txt-container > h2{
+    font-size:60px;
+}
+
+.img-container {
+    margin-top: 25px;
+}
+
+.img-container img {      
+    width: 60px;
+    
 }
 
 
