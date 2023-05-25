@@ -20,3 +20,16 @@
     width: 100%;
 
 }
+
+/*Contant*/
+
+.content{
+    background-color: var(--branco);
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: var(--dackcinza);
+}
